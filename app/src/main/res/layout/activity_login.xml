@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201818"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="130dp"
+        android:layout_height="126dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/authenticor" />
+
+    <TextView
+        android:id="@+id/lblEmailAdressLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogin"
+        android:layout_marginStart="40dp"
+        android:text="Email Adresi:"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/txtEmailAdressLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblEmailAdressLogin"
+        android:layout_alignStart="@id/lblEmailAdressLogin"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/lblPasswordLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmailAdressLogin"
+        android:layout_alignStart="@id/lblEmailAdressLogin"
+        android:layout_marginTop="16dp"
+        android:text="Parola: "
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/txtPasswordLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblPasswordLogin"
+        android:layout_alignStart="@id/lblPasswordLogin"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="178dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/txtPasswordLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Giriş"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRegisterLogin"
+        android:layout_width="178dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/btnLogin"
+        android:layout_alignStart="@id/btnLogin"
+        android:layout_marginTop="24dp"
+        android:text="Kayıt Ol" />
+
+</RelativeLayout>

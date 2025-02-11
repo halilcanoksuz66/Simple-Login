@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2929"
+    tools:context=".Update">
+
+    <ImageButton
+        android:id="@+id/profileImageButton"
+        android:layout_width="194dp"
+        android:layout_height="84dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/round_background"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/lblNameUpdate"
+        android:layout_width="103dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/profileImageButton"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="106dp"
+        android:gravity="center"
+        android:text="Name:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtNameUpdate"
+        android:layout_width="235dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@id/lblNameUpdate"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@id/lblNameUpdate"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblEmailUpdate"
+        android:layout_width="103dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/lblNameUpdate"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Email:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtEmailUpdate"
+        android:layout_width="235dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@id/lblEmailUpdate"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@id/lblEmailUpdate"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblPasswordUpdate"
+        android:layout_width="103dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/lblEmailUpdate"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Password:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtPasswordUpdate"
+        android:layout_width="235dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@id/lblPasswordUpdate"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@id/lblPasswordUpdate"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnUpdateUpdate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPasswordUpdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Update"/>
+
+
+
+</RelativeLayout>

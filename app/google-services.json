@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1014452095918",
+    "project_id": "vize-739d7",
+    "storage_bucket": "vize-739d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014452095918:android:98008166ecd20ad8d2963f",
+        "android_client_info": {
+          "package_name": "com.example.vizeproje"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADkfY9eq0w2A49EKy63lshvYbE0Ntau5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

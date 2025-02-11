@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2929"
+    tools:context=".Profile">
+
+    <ImageButton
+        android:id="@+id/profileImageButton"
+        android:layout_width="168dp"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_background"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/lblNameProfile"
+        android:layout_width="103dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/profileImageButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Name:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblNameReplyProfile"
+        android:layout_width="235dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@id/lblNameProfile"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@id/lblNameProfile"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblEmailProfile"
+        android:layout_width="103dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/lblNameProfile"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="Email:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblEmailReplyProfile"
+        android:layout_width="235dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@id/lblEmailProfile"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@id/lblEmailProfile"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblPasswordProfile"
+        android:layout_width="103dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/lblEmailProfile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Password:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblPasswordReplyProfile"
+        android:layout_width="235dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@id/lblPasswordProfile"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@id/lblPasswordProfile"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPasswordReplyProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnDeleteProfile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdateProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Delete Profile" />
+
+    <TextView
+        android:id="@+id/countDownTimerTextProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDeleteProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="TextView"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

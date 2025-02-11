@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2929"
+    tools:context=".Anasayfa">
+
+
+    <VideoView
+        android:id="@+id/videoViewAnasayfa"
+        android:layout_width="410dp"
+        android:layout_height="275dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/browseVideoAnasayfa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoViewAnasayfa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Browse Video" />
+
+    <Button
+        android:id="@+id/uploadVideoAnasayfa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/browseVideoAnasayfa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Upload Video" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBarHorizantal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="222dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/uploadVideoAnasayfa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:progress="25" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarHorizantal"
+        android:layout_centerHorizontal="true"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAnasayfa"
+        android:layout_width="78dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="0dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/user" />
+</RelativeLayout>

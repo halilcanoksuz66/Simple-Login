@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageViewRegister"
+        android:layout_width="199dp"
+        android:layout_height="147dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="60dp"
+        app:srcCompat="@drawable/register"/>
+
+    <TextView
+        android:id="@+id/lblNameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewRegister"
+        android:layout_marginStart="40dp"
+        android:text="İsim:" />
+
+    <EditText
+        android:id="@+id/txtNameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblNameRegister"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="İsminizi girin"/>
+
+    <TextView
+        android:id="@+id/lblEmailRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNameRegister"
+        android:layout_marginStart="40dp"
+        android:text="Email Adresi:" />
+
+    <EditText
+        android:id="@+id/txtEmailAdressRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblEmailRegister"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Mail adresinizi girin"/>
+
+    <TextView
+        android:id="@+id/lblPasswordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmailAdressRegister"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Parola: " />
+
+    <EditText
+        android:id="@+id/txtPasswordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblPasswordRegister"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        android:hint="Parolanızı girin"/>
+
+    <TextView
+        android:id="@+id/lblPasswordAgainRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPasswordRegister"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Parola Tekrar:" />
+
+    <EditText
+        android:id="@+id/txtPasswordAgainRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPasswordAgainRegister"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        android:hint="Parola tekrar girin"/>
+
+    <TextView
+        android:id="@+id/lblDateRegister"
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/txtPasswordAgainRegister"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Tarih:" />
+
+
+    <ImageButton
+        android:id="@+id/btnOpenCalendar"
+        android:layout_width="64dp"
+        android:layout_height="37dp"
+        android:layout_alignTop="@id/lblDateRegister"
+        android:layout_toEndOf="@+id/lblDateRegister"
+        android:layout_marginStart="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/calendar" />
+
+    <TextView
+        android:id="@+id/lblDateResultRegister"
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/txtPasswordAgainRegister"
+        android:layout_alignBaseline="@id/btnOpenCalendar"
+        android:layout_toEndOf="@id/btnOpenCalendar"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOpenCalendar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Kayıt Ol"/>
+
+    <Button
+        android:id="@+id/maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblDateRegister"
+        android:layout_marginStart="40dp"
+        android:text="maps" />
+
+</RelativeLayout>
